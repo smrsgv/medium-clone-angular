@@ -2,11 +2,13 @@
   "name": "medium-clone-angular",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "ng": "npx -p @angular/cli@15 ng",
+    "start": "npx -p @angular/cli@15 ng serve",
+    "build": "npx -p @angular/cli@15 ng build",
+    "watch": "npx -p @angular/cli@15 ng build --watch --configuration development",
+    "test": "npx -p @angular/cli@15 ng test",
+    "lint": "npx -p @angular/cli@15 ng lint",
+    "prettier": "npx prettier . --write"
   },
   "private": true,
   "dependencies": {
@@ -24,9 +26,18 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.10",
+    "@angular-eslint/builder": "15.2.1",
+    "@angular-eslint/eslint-plugin": "15.2.1",
+    "@angular-eslint/eslint-plugin-template": "15.2.1",
+    "@angular-eslint/schematics": "15.2.1",
+    "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "~15.2.10",
     "@angular/compiler-cli": "^15.2.0",
     "@types/jasmine": "~4.3.0",
+    "@typescript-eslint/eslint-plugin": "5.48.2",
+    "@typescript-eslint/parser": "5.48.2",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^9.0.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
