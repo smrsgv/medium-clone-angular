@@ -1,27 +1,35 @@
-# MediumCloneAngular
+# Medium Clone Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
 
-## Development server
+### Install Node
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Install one of [actively supported versions for Angular 15](https://angular.io/guide/versions) using [NVM](https://github.com/coreybutler/nvm-windows#readme) (recommended) or [official web site](https://nodejs.org/).
 
-## Code scaffolding
+### Install Angular CLI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You should not install Angular CLI by yourself, appropriate version (15) will be installed on first `npm run start` call.
 
-## Build
+Avoid using `ng` directly, use `npm run ng` instead, to make sure you are using the proper Angular CLI version.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Install dependecies
 
-## Running unit tests
+```sh
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Run application
 
-## Running end-to-end tests
+```sh
+npm run start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Run following commands before each commit/PR:
 
-## Further help
+```sh
+npm run lint
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+npm run prettier
+```
